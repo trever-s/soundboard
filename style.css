@@ -1,0 +1,45 @@
+body {
+	background: #333;
+	margin: 20px;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 4em;
+	font-weight: normal;
+	color: #fff;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: center;
+	.item {
+		order: 4;
+		background: #e54949;
+		width: 200px;
+		height: 200px;
+		margin: 10px;
+		padding: 10px;
+		cursor: pointer;
+		transition: 0.2s;
+		h2 {
+			color: #fff;
+			font-size: 1.2em;
+			margin-top: 0;
+		}
+		.fa-play {
+			color: rgba(0,0,0,0.1);
+			font-size: 4em;
+			text-align: center;
+			display: block;
+			margin-top: 50px;
+		}
+	}
+	.item:hover {
+		transform: scale(1.05);
+	}
+}
